@@ -2,8 +2,8 @@ import os
 from pydantic_ai.agent import Agent 
 from pydantic_ai.common_tools.tavily import tavily_search_tool
 
-os.environ['GROQ_API_KEY'] = "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"
-TAVILI_API_KEY = "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"
+os.environ['GROQ_API_KEY'] = ""
+TAVILI_API_KEY = ""
 agent  =  Agent(
     "groq:llama-3.1-8b-instant",
     tools=[tavily_search_tool(TAVILI_API_KEY)],
